@@ -88,6 +88,24 @@
 // =============================
 // 8 Linking And Naviagation
 
+// import Link from 'next/link'
+// import React from 'react'
+
+// const Home = () => {
+//   return (
+//     <div>
+//       <h1> Home Page </h1>
+//       <Link href="/login">Go To Login Page</Link>
+//       <br/>
+//       <br/>
+//       <Link href="/about">Go To about Page</Link>
+//     </div>
+//   )
+// }
+
+// export default Home
+
+// =======================================
 import Link from 'next/link'
 import React from 'react'
 
@@ -99,6 +117,12 @@ const Home = () => {
       <br/>
       <br/>
       <Link href="/about">Go To about Page</Link>
+      <br/>
+      <br/>
+      <Link href="/productlist">Go To product list Page</Link>
+      <br/>
+      <br/>
+      <Link href="/userslist">Go To user list Page</Link>
     </div>
   )
 }
