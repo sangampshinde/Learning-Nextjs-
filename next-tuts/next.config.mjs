@@ -1,9 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-
-        domains: ["images.unsplash.com"] // Remove the trailing slash
-
+    async redirects(){
+        return [
+            {
+              source: '/old-path',
+              destination: '/new-path',
+              permanent: true, // 301 redirect
+            },
+          ];
     }
 }
 
